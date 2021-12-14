@@ -109,10 +109,9 @@ input[class^='btn-']:hover {
 .items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .item {
@@ -295,7 +294,7 @@ img {
   color: #fff;
 }
 
-#main-nav a:hover {
+#main-nav a:hover:not(.logo) {
   border-color: #ccc;
 }
 
@@ -329,8 +328,7 @@ img {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 3rem;
 }
 
@@ -342,8 +340,7 @@ img {
 #home-stats .stats {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 4rem;
 }
 
@@ -372,8 +369,7 @@ img {
 #home-process .process {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   text-align: center;
 }
@@ -428,7 +424,8 @@ img {
 #about-info .info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bioimage bio bio' 'award-1 award-2 award-3';
+      grid-template-areas: 'bioimage bio bio'
+ 'award-1 award-2 award-3';
   gap: 1.2rem;
 }
 
@@ -493,8 +490,7 @@ img {
 #about-logos .about-logos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -505,8 +501,7 @@ img {
 #about-testimonials .testimonials {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
 }
 
@@ -537,7 +532,9 @@ img {
 #contact-form .text-fields {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name email' 'subject phone' 'message message';
+      grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   gap: 1rem;
 }
 
@@ -584,8 +581,7 @@ img {
 #contact-info .infos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
@@ -699,7 +695,11 @@ img {
   #about-info .info {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'bioimage' 'bio' 'award-1' 'award-2' 'award-3';
+        grid-template-areas: 'bioimage'
+ 'bio'
+ 'award-1'
+ 'award-2'
+ 'award-3';
     gap: 1.2rem;
   }
   #about-logos {
@@ -714,7 +714,11 @@ img {
         grid-template-columns: 1fr;
   }
   #contact-form .text-fields {
-        grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
+        grid-template-areas: 'name'
+ 'email'
+ 'subject'
+ 'phone'
+ 'message';
     gap: 1rem;
   }
   #contact-info .infos {
